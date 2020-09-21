@@ -46,16 +46,16 @@ public class DepartmentAddServlet extends HttpServlet {
 		String type = request.getParameter("type");
 		String ZHtype;
 		if (type == "dep") {
-			ZHtype = "����";
+			ZHtype = "公司";
 		}
-		else ZHtype = "��˾";
+		else ZHtype = "部门";
 		
 		String tel = request.getParameter("tel");
 		String date = request.getParameter("date");
 		
 		if (date == "")
 		{
-			date = "1970-01-01";
+			date = "1999-09-09";
 		}
 		
 		Department d = new Department(name,ZHtype,tel,date);

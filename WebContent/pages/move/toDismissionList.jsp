@@ -52,7 +52,7 @@
 							<input type="text" name="dname" required lay-verify="required" placeholder="输入部门名称" autocomplete="off" class="layui-input">
 						</div>
 						<button class="layui-btn layui-btn-xs" type="submit"
-				onClick="javascript:toUrl('/PersonnelManagementSystem//SearchFormalServlet')">检索</button>
+				onClick="javascript:toUrl('/PersonnelManagementSystem/SearchFormalServlet')">搜索</button>
 					</div>
 				</form>
 

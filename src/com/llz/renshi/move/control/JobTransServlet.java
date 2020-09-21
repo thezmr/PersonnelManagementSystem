@@ -62,7 +62,7 @@ public class JobTransServlet extends HttpServlet {
 		s.setS_jobId(job2);
 		isss.updateStaffJobById(s);
 		
-		response.sendRedirect("pages/transfer/jumpToStaffListServlet.html");
+		response.sendRedirect("pages/move/jumpToStaffListServlet.html");
 	}
 
 	/**

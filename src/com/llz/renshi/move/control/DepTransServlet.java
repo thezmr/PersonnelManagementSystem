@@ -59,7 +59,7 @@ public class DepTransServlet extends HttpServlet {
 		//����Ա���Ĳ�����Ϣ
 		s.setS_departmentId(dep2);
 		isss.updateStaffDepartmentById(s);
-		response.sendRedirect("pages/transfer/jumpToStaffListServletForDep.html");
+		response.sendRedirect("pages/move/jumpToStaffListServletForDep.html");
 	}
 
 	/**

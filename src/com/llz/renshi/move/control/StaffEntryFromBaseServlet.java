@@ -60,7 +60,7 @@ public class StaffEntryFromBaseServlet extends HttpServlet {
 		base.setB_staffId(s);	
 		ibs.deleteBase(base);//ͨ��Ա��Idɾ���˲ſ��м�¼
 		
-		response.sendRedirect("/code/pages/transfer/jump_baselist.html");
+		response.sendRedirect("/PersonnelManagementSystem/pages/move/jumpBaseList.html");
 		
 	}
 }

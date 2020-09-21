@@ -63,7 +63,7 @@
 </head>
 
 <body>
-				<form class="layui-form" action="/code/DepartmentDeleteServlet">
+				<form class="layui-form" action="/PersonnelManagementSystem/DepartmentDeleteServlet">
 					<div class="layui-form-item">
 						<button class="layui-btn"  type="submit">搜索全部</button>
 					</div>
@@ -90,11 +90,11 @@
 			<td>${d.d_tel }</td>
 			<td>${d.d_date }</td>
 			<td>
-				<a href="code/pages/department2/department_update.jsp?dname=${d.d_name }&did=${d.d_id }&
+				<a href="PersonnelManagementSystem/pages/department/departmentUpdate.jsp?dname=${d.d_name }&did=${d.d_id }&
 				dtype=${d.d_type }&dtel=${d.d_tel }&ddate=${d.d_date }">修改信息</a>
 				
 				
-				<a href="javascript:checkDelete('/code/DepDoDeleteServlet?dname=${d.d_name }&did=${d.d_id }&
+				<a href="javascript:checkDelete('/PersonnelManagementSystem/DepDoDeleteServlet?dname=${d.d_name }&did=${d.d_id }&
 				dtype=${d.d_type }&dtel=${d.d_tel }&ddate=${d.d_date }')">删除部门</a>			
 
 			</td>

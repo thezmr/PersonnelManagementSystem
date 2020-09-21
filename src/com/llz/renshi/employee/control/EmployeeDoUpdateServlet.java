@@ -88,7 +88,7 @@ public class EmployeeDoUpdateServlet extends HttpServlet {
 		IEmployeeService ps = new EmployeeService();
 		boolean result = ps.updateEmployee(e);
 		if(result == true) {
-			response.sendRedirect("/code/pages/staff/jumpUpdate.jsp");
+			response.sendRedirect("/PersonnelManagementSystem/pages/staff/jumpUpdate.jsp");
 		}
 		else {
 			

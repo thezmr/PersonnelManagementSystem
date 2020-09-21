@@ -41,16 +41,16 @@ public class JobUpdateServlet extends HttpServlet {
 		String ZHtype = null;
 		switch(type) {
 		case "manage":
-			ZHtype = "����";
+			ZHtype = "管理";
 			break;
 		case "tech":
-			ZHtype = "����";
+			ZHtype = "技术";
 			break;
 		case "mark":
-			ZHtype = "����";
+			ZHtype = "市场";
 			break;
 		case "sell":
-			ZHtype = "Ӫ��";
+			ZHtype = "销售";
 			break;
 		}
 		

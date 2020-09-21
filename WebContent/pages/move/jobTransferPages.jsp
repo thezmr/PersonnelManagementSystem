@@ -40,77 +40,7 @@
 
 <body>
 		<div class="cBody">
-			<div class="layui-tab" lay-filter="myPage">
-				<ul class="layui-tab-title">
-					<li class="layui-this" lay-id="historyList">需求调动列表</li>
-					<li lay-id="todayList">已完成调动列表</li>
-				</ul>
-				<div class="layui-tab-content">
-					<div class="layui-tab-item layui-show">
-					
-						<table class="layui-table">
-							<thead>
-								<tr>
-									<th>员工号</th>
-									<th>姓名</th>
-									<th>性别</th>
-									<th>部门名称</th>
-									<th>现岗位名称</th>
-									<th>需求调动岗位名称</th>									
-									<th>操作</th>
-								</tr>
-							</thead>
-							<tbody>
-													
-								<c:forEach items="${requestScope.st }" var = "s">
-						<form action="/PersonnelManagementSystem/JobTransServlet">
-						<tr>
-							<td>
-								<input type="text" name="sid" readonly value="${s.s_id }" required 
-								autocomplete="off" class="layui-input">
-							</td>
-							<td>${s.s_name }</td>
-							<td>${s.s_sex }</td>
-							<td>${s.s_departmentId.d_name }</td>
-							<td>
-								<input type="text" name="prename" readonly value="${s.s_jobId.j_name }" required 
-								autocomplete="off" class="layui-input">
-							</td>
 
-							<td>
-								<input type="text" name="jname" required autocomplete="off"  class="layui-input">
-							</td>
-							<td>
-								<button type="submit" class="layui-btn" >岗位调动</button>
-							</td>
-							</form>		
-							</c:forEach>
-						
-							</tbody>
-						</table>
-						
-						<!-- layUI 分页模块 -->
-						<div id="pages1"></div>
-						<script>
-							layui.use(['laypage', 'layer'], function() {
-								var laypage = layui.laypage,
-									layer = layui.layer;
-
-								//总页数大于页码总数
-								laypage.render({
-									elem: 'pages1',
-									count: 30,
-									layout: ['prev', 'page', 'next', 'limit', 'skip'],
-									jump: function(obj) {
-										console.log(obj)
-									}
-								});
-							});
-						</script>
-						</div>
-						
-						
-					<div class="layui-tab-item">
 						<table class="layui-table">
 							<thead>
 								<tr>
@@ -133,43 +63,8 @@
 								
 							</tbody>
 						</table>
+						</div>
 
-						<!-- layUI 分页模块 -->
-						<div id="pages2"></div>
-						<script>
-							layui.use(['laypage', 'layer'], function() {
-								var laypage = layui.laypage,
-									layer = layui.layer;
 
-								//总页数大于页码总数
-								laypage.render({
-									elem: 'pages2',
-									count: 100,
-									layout: ['prev', 'page', 'next', 'limit', 'skip'],
-									jump: function(obj) {
-										console.log(obj)
-									}
-								});
-							});
-						</script>
-					</div>
-				</div>
-			</div>
-			<script>
-				layui.use('element', function() {
-					var element = layui.element;
-
-					//获取hash来切换选项卡，假设当前地址的hash为lay-id对应的值
-					var layid = location.hash.replace(/^#test1=/, '');
-					element.tabChange('myPage', layid); //假设当前地址为：http://a.com#test1=222，那么选项卡会自动切换到“发送消息”这一项
-
-					//监听Tab切换，以改变地址hash值
-					element.on('tab(myPage)', function() {
-						location.hash = 'test1=' + this.getAttribute('lay-id');
-						console.log(this.getAttribute('lay-id'));
-					});
-				});
-			</script>
-		</div>
 	</body>
 </html>

@@ -89,7 +89,7 @@
 			<td>${j.j_size }</td>
 			
 			<td>
-				<a href="code/pages/job/job_update.jsp?jname=${j.j_name }&jid=${j.j_id }&
+				<a href="PersonnelManagementSystem/pages/job/jobUpdate.jsp?jname=${j.j_name }&jid=${j.j_id }&
 				jtype=${j.j_type }&jsize=${j.j_size }">修改信息</a>
 				
 				<a href="javascript:checkDelete('/PersonnelManagementSystem/JobDoDeleteServlet?jname=${j.j_name }&jid=${j.j_id }&

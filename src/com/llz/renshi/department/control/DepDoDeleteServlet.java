@@ -39,9 +39,9 @@ public class DepDoDeleteServlet extends HttpServlet {
 		String type = request.getParameter("dtype");
 		String ZHtype;
 		if (type == "dep") {
-			ZHtype = "����";
+			ZHtype = "公司";
 		}
-		else ZHtype = "��˾";
+		else ZHtype = "部门";
 		
 		String tel = request.getParameter("dtel");
 		String date = request.getParameter("ddate");

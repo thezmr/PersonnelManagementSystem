@@ -96,7 +96,7 @@ public class DoTrailResultServlet extends HttpServlet {
 			ids.insertDismission(dismission);
 		}
 		
-		response.sendRedirect("/code/pages/transfer/jumpToSearchTrailServlet.html");
+		response.sendRedirect("/PersonnelManagementSystem/pages/move/jumpToSearchTrailServlet.html");
 		
 	}
 

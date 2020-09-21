@@ -48,35 +48,35 @@
 					    <dl>
 					    	<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/department/jumpList.html',this)">部门列表</a></dt>
 							<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/department/departmentAdd.html',this)">添加部门</a></dt>
-							<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/department/jumpDelete.html',this)">维护部门</a></dt>
+							<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/department/jumpDelete.html',this)">修改部门</a></dt>
 					    </dl>
 					</li>
 					<li>
-					    <a class="menuFA" href="javascript:void(0)"><i class="iconfont icon-shangpin left"></i>岗位管理<i class="iconfont icon-dajiantouyou right"></i></a>
+					    <a class="menuFA" href="javascript:void(0)"><i class="iconfont icon-liuliangyunpingtaitubiao03 left"></i>岗位管理<i class="iconfont icon-dajiantouyou right"></i></a>
 					    <dl>
 					    	<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/job/jumpList.html',this)">岗位列表</a></dt>					    	
 							<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/job/jobAdd.html',this)">添加岗位</a></dt>
-					    	<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/job/jumpMaintain.html',this)">维护岗位</a></dt>
+					    	<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/job/jumpMaintain.html',this)">修改岗位</a></dt>
 					    </dl>	
 					</li>
 					
                     <li>
-		                <a class="menuFA" href="javascript:void(0)"><i class="iconfont icon-icon left"></i>员工入职管理<i class="iconfont icon-dajiantouyou right"></i></a>
+		                <a class="menuFA" href="javascript:void(0)"><i class="iconfont icon-yunying left"></i>员工入职管理<i class="iconfont icon-dajiantouyou right"></i></a>
 		                <dl>
 		                	<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/staff/jumpInsert.jsp',this)">普通入职</a></dt>
-		                	<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/move/jumpBaseList.html',this)">人才库入职</a></dt>
+		                	<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/move/jumpBaseList.html',this)">从人才库入职</a></dt>
 		                </dl>
 		           	</li>
 
 		        	<li>
-		                <a class="menuFA" href="javascript:void(0)"><i class="iconfont icon-liuliangyunpingtaitubiao03 left"></i>试用期管理<i class="iconfont icon-dajiantouyou right"></i></a>
+		                <a class="menuFA" href="javascript:void(0)"><i class="iconfont icon-yunying left"></i>试用期管理<i class="iconfont icon-dajiantouyou right"></i></a>
 		                <dl>
 		                	<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/move/jumpToSearchTrailServlet.html',this)">试用期员工列表</a></dt>
 		                	<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/move/jumpToSearchFormalServlet.html',this)">已转正员工查询</a></dt>
 		                </dl>
 		            </li>
 		        	<li>
-		                <a class="menuFA" href="javascript:void(0)"><i class="iconfont icon-shangpin left"></i>部门调动管理<i class="iconfont icon-dajiantouyou right"></i></a>
+		                <a class="menuFA" href="javascript:void(0)"><i class="iconfont icon-yunying left"></i>部门调动管理<i class="iconfont icon-dajiantouyou right"></i></a>
 		                <dl>
 		                	<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/move/jumpToStaffListServletForDep.html',this)">部门异动员工</a></dt>
 		                </dl>
@@ -91,7 +91,6 @@
 		        	<li>
 		                <a class="menuFA" href="javascript:void(0)"><i class="iconfont icon-yunying left"></i>离职管理<i class="iconfont icon-dajiantouyou right"></i></a>
 		                <dl>
-		                	<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/move/jumpToDismission1.html',this)">操作列表</a></dt>
 		                	<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/move/jumpToDismission2.html',this)">离职列表</a></dt>
 		                </dl>
 		            </li>
@@ -99,15 +98,15 @@
 		            <li>
 		                <a class="menuFA" href="javascript:void(0)"><i class="iconfont icon-yunying left"></i>员工信息中心<i class="iconfont icon-dajiantouyou right"></i></a>
 		                <dl>
-		                	<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/staff/jumpStaff.jsp',this)">员工信息查询</a></dt>
-		                	<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/staff/jumpUpdate.jsp',this)">员工信息维护</a></dt>
+		                	<dt><a href="javascript:void(0)" onclick="menuCAClick('pages/staff/staffMaintain.jsp',this)">员工信息维护</a></dt>
+
 		                </dl>
 		            </li>
 		            
   					<li>
-		                <a class="menuFA" href="javascript:void(0)"><i class="iconfont icon-icon left"></i>报表模块<i class="iconfont icon-dajiantouyou right"></i></a>
+		                <a class="menuFA" href="javascript:void(0)"><i class="iconfont icon-icon left"></i>统计报表<i class="iconfont icon-dajiantouyou right"></i></a>
 		                <dl>
-		                	<dt><a href="javascript:void(0)" onclick="menuCAClick('maintain.html',this)">订单统计报表</a></dt>
+		                	<dt><a href="javascript:void(0)" onclick="menuCAClick('maintain.html',this)">报表导出</a></dt>
 		                </dl>
 		           	</li>
 		        </ul>

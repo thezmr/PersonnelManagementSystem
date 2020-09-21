@@ -66,7 +66,7 @@ public class DoDismissionServlet extends HttpServlet {
 			ibs.insertBase(base);
 		}
 		
-		response.sendRedirect("/code/pages/transfer/jumpToDismission2.html");
+		response.sendRedirect("/PersonnelManagementSystem/pages/move/jumpToDismission2.html");
 	}
 
 	/**
